@@ -2,4 +2,4 @@
 
 Frontend is React.js
 
-Backend is Python Flask
+Backend is Node.js & Express.js
