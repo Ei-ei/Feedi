@@ -9,8 +9,7 @@ function App() {
       This is the starter point for Feedi. Everything will be show up in here.
       <Homepage />
       <Auth />
-
-
+This is testing...
 
     </div>
   );
