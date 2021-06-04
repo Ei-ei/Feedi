@@ -8,6 +8,8 @@ function App() {
     <div className="App">
       This is the starter point for Feedi. Everything will be show up in here.
       <Homepage />
+      <Auth />
+
 
 
     </div>
