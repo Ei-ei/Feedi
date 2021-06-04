@@ -10,6 +10,7 @@ function App() {
       <Homepage />
       <Auth />
 This is testing...
+This is a second testing....
 
     </div>
   );
