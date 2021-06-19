@@ -1,21 +1,33 @@
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 import About from "./Pages/AboutUs/About";
-// import Homepage from "./Pages/Homepage/Homepage";
-
-
+import Homepage from "./Pages/Homepage/Homepage";
+import FAQ from "./Pages/FAQ/FAQ";
+import BrowseRestaurant from "./Pages/BrowseRestaurant/BrowseRestaurant";
+import RestaurantSystem from "./Pages/RestaurantSystem/Restaurant";
+import UserSystem from "./Pages/UserSystem/User";
+import Auth from "./Pages/Auth/Auth";
+import AdminSystem from "./Pages/AdminSystem/Admin";
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
+    <Router>
+    <div>
       {/* This is the starter point for Feedi. Everything will be show up in here. */}
       {/* begin miguel part */}
-      <About />
-      {/* END of Miguel Part end point  */}
-      {/* <Homepage /> */}
+      <Route exact path='/' component={Homepage}/>
+      <Route path='/about' component={About} />
+      <Route path='/FAQ' component={FAQ} />
+      <Route path='/browse' component={BrowseRestaurant} />
+      <Route path='/restaurant' component={RestaurantSystem} />
+      <Route path='/user' component={UserSystem} />
+      <Route path='/auth' component={Auth} />
+      <Route path='/admin' component={AdminSystem} />
 
 
       
     </div>
+    </Router>
   );
 }
 
