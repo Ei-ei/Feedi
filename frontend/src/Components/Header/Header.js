@@ -65,8 +65,8 @@ export default function Header() {
                         {/* <Button size="small" className="home" variant="contained">Home</Button> */}
                         {/* About us should be in the footer section */}
                         {/* <Button className={classes.submenu} size="medium" href="/about" style={{ textTransform: 'capitalize' }}>About Us</Button> */}
-                        <Button className={classes.submenu} href="/about" size="medium" startIcon={<RestaurantMenuIcon />}>Restaurant NearBy</Button>
-                        <Button className={classes.submenu} href="/about" size="medium" startIcon={<PersonIcon />}>Login / Sign Up</Button>
+                        <Button className={classes.submenu} href="/browse" size="medium" startIcon={<RestaurantMenuIcon />}>Restaurant NearBy</Button>
+                        <Button className={classes.submenu} href="/login" size="medium" startIcon={<PersonIcon />}>Login / Sign Up</Button>
 
                     </div>
 
