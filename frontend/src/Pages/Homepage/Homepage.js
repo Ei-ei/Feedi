@@ -135,7 +135,7 @@ const gridSection = makeStyles((theme) => ({
         fontFamily: "Nunito",
     },
     join: {
-        backgroundColor: "#ba68c8",
+        backgroundColor: "#4a148c",
         textTransform: 'capitalize',
         fontFamily: "Inknut Antiqua",
         color: "#ffffff",
