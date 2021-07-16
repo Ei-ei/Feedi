@@ -5,7 +5,10 @@ import FAQPage from "./Pages/FAQ/FAQ";
 import BrowseRestaurant from "./Pages/BrowseRestaurant/BrowseRestaurant";
 import RestaurantSystem from "./Pages/RestaurantSystem/Restaurant";
 import UserSystem from "./Pages/UserSystem/User";
-import Auth from "./Pages/Auth/Auth";
+import Login from "./Pages/Auth/Login/Login";
+import SignUp from "./Pages/Auth/SignUp/SignUp";
+import Feeder from "./Pages/Auth/FeederSignup/Feeder";
+import Partner from "./Pages/Auth/RestaurantPartnership/Partner";
 import AdminSystem from "./Pages/AdminSystem/Admin";
 
 
@@ -24,8 +27,11 @@ function App() {
           <Route path='/browse' component={BrowseRestaurant} />
           <Route path='/restaurant' component={RestaurantSystem} />
           <Route path='/user' component={UserSystem} />
-          <Route path='/auth' component={Auth} />
           <Route path='/admin' component={AdminSystem} />
+          <Route path='/login' component={Login} />
+          <Route path='/signup' component={SignUp} />
+          <Route path='/feeder' component={Feeder} />
+          <Route path='/partner' component={Partner} />
         </Switch>
 
       </div>

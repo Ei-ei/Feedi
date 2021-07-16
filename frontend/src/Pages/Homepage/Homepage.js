@@ -8,13 +8,15 @@ import IconButton from '@material-ui/core/IconButton';
 import SearchIcon from '@material-ui/icons/Search';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
+import Button from '@material-ui/core/Button';
+import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
 
-import chinese_food from "../../images/chinesefood_overview.jpg";
-import the_eight_foods from "../../images/the_eight_foods.jpg";
-import delivery_guy from "../../images/delivery_guy.jpg";
-import partner from "../../images/partner.jpg";
-import local from "../../images/local.png";
-import stomach from "../../images/chinese_stomach.jpg";
+import chinese_food from "../../images/homepage/chinesefood_overview.jpg";
+import the_eight_foods from "../../images/homepage/the_eight_foods.jpg";
+import delivery_guy from "../../images/homepage/delivery_guy.jpg";
+import partner from "../../images/homepage/partner.jpg";
+import local from "../../images/homepage/local.png";
+import stomach from "../../images/homepage/chinese_stomach.jpg";
 
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
@@ -124,12 +126,23 @@ const gridSection = makeStyles((theme) => ({
     subsection: {
         marginTop: "2.5em",
         padding: "10px",
+
     },
     body: {
         textAlign: "center",
         paddingLeft: "150px",
         paddingRight: "150px",
         fontFamily: "Nunito",
+    },
+    join: {
+        backgroundColor: "#ba68c8",
+        textTransform: 'capitalize',
+        fontFamily: "Inknut Antiqua",
+        color: "#ffffff",
+        width: "200px",
+        height: "40px",
+        marginTop: "2em",
+
     }
 
 }));
@@ -212,7 +225,9 @@ export default function Homepage() {
                         <Typography className={classG.title} variant="h5">Become a Feeder</Typography>
                         <Typography variant="body1" className={classG.body}>The overall average patient rating of Liem P Bui is Great.
                             P Bui has been rated by 4 patients.From those 4 patients 0 of those left a comment along with
-                            their rating.The overall rating for Liem P Bui is 4.0 of 5.0 stars.</Typography>
+                            their rating.The overall rating for Liem P Bui is 4.0 of 5.0 stars.
+                            <Button className={classG.join} variant="contained" href="/feeder" size="medium" startIcon={<AttachMoneyIcon />}>Feeder Signup</Button></Typography>
+
                     </Grid>
                     <Grid item xs={12} sm={6} md={6} className={classG.subsection}>
                         <img className={classG.paper} src={delivery_guy} height="430" width="600" alt="food"></img>
@@ -226,7 +241,8 @@ export default function Homepage() {
                         <Typography className={classG.title} variant="h5">Become a Partner</Typography>
                         <Typography variant="body1" className={classG.body}>The overall average patient rating of Liem P Bui is Great.
                             Liem P Bui has been rated by 4 patients.From those 4 patients 0 of those left a comment along with
-                            their rating.The overall rating for Liem P Bui is 4.0 of 5.0 stars.</Typography>
+                            their rating.The overall rating for Liem P Bui is 4.0 of 5.0 stars.
+                            <Button className={classG.join} variant="contained" href="/partner" size="medium" startIcon={<AttachMoneyIcon />}>Partner Signup</Button></Typography>
                     </Grid>
                 </Grid>
             </div>
