@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from "../../Components/Header/Header";
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
@@ -9,16 +8,17 @@ import IconButton from '@material-ui/core/IconButton';
 import SearchIcon from '@material-ui/icons/Search';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
-import './Homepage.css';
 
-import food_overview from "../../images/food_overview.jpg";
 import chinese_food from "../../images/chinesefood_overview.jpg";
 import the_eight_foods from "../../images/the_eight_foods.jpg";
-import eight_type from "../../images/eight_types.jpeg";
-import feeder from "../../images/feeder.png";
 import delivery_guy from "../../images/delivery_guy.jpg";
+import partner from "../../images/partner.jpg";
 import local from "../../images/local.png";
 import stomach from "../../images/chinese_stomach.jpg";
+
+import Header from "../../Components/Header/Header";
+import Footer from "../../Components/Footer/Footer";
+import './Homepage.css';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -83,6 +83,9 @@ const desc = makeStyles((theme) => ({
     },
     title: {
         textAlign: "center",
+        fontFamily: "Inknut Antiqua",
+        color: "#ba68c8",
+        fontSize: "120%",
     },
     paper: {
         display: "block",
@@ -91,13 +94,43 @@ const desc = makeStyles((theme) => ({
     },
     description: {
         textAlign: "center",
+        padding: "20px",
+        fontFamily: "Nuito",
+    },
+    spanning: {
+        color: "red",
     },
 }));
 
 const gridSection = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
+
     },
+    paper: {
+        display: "block",
+        marginLeft: "auto",
+        marginRight: "auto",
+    },
+    title: {
+        textAlign: "center",
+        color: "#7b1fa2",
+        fontFamily: "Inknut Antiqua",
+        fontSize: "185%",
+        lineHeight: "290px",
+        height: "200px",
+
+    },
+    subsection: {
+        marginTop: "2.5em",
+        padding: "10px",
+    },
+    body: {
+        textAlign: "center",
+        paddingLeft: "150px",
+        paddingRight: "150px",
+        fontFamily: "Nunito",
+    }
 
 }));
 
@@ -143,17 +176,27 @@ export default function Homepage() {
                         <Grid item xs={12} sm={4}>
                             <img className={classD.paper} src={local} height="230" width="330" alt="food"></img>
                             <Typography className={classD.title}>Local Chinese Restaurant</Typography>
-                            <Typography className={classD.description}>What's up</Typography>
+                            <Typography className={classD.description}><span className={classD.spanning}>Feedi</span> is targeting overseas Chinese and non-Chinese, we help you to discover all the possible local Chinese restaurants nearby, up to eight major cuisines.
+                                However, most Chinese people are unable to visit their local famous Chinese restaurant.
+                                Feedi offers food delivery service to help you enjoy Chinese food in your busy schedule.</Typography>
                         </Grid>
                         <Grid item xs={12} sm={4}>
                             <img className={classD.paper} src={stomach} height="230" width="330" alt="food"></img>
                             <Typography className={classD.title}>Chinese Stomach</Typography>
-                            <Typography className={classD.description}>What's up</Typography>
+                            <Typography className={classD.description}>Chinese who study abroad, family immigrants, travelers,
+                                and business people all have "Chinese Stomach", which is a passion in Chinese food. <br></br>
+                                If you are a restaurant business owner and would like to share your delicious cuisines with more Chinese and Non-Chinese,
+                                we are encouraging you to be <span className={classD.spanning}>Feedi's</span> partner. So that...
+                            </Typography>
                         </Grid>
                         <Grid item xs={12} sm={4}>
                             <img className={classD.paper} src={the_eight_foods} height="230" width="330" alt="food"></img>
-                            <Typography className={classD.title}>Browsing Eight Major Chinese Cuisines</Typography>
-                            <Typography className={classD.description}>What's up</Typography>
+                            <Typography className={classD.title}>Discovering Eight Major Chinese Cuisines</Typography>
+                            <Typography className={classD.description}>China has eight world-famous cuisines. They are Sichuan Cuisine, Shandong Cuisine, Jiangsu Cuisine, Zhejiang Cuisine,
+                                Guangdong/Cantonese Cuisine, Hunan Cuisine, Anhui Cuisine, and Fujian Cuisine.
+                                <span className={classD.spanning}> Feedi</span> As a platform, we are committed to discovering more local Chinese restaurants based on your local area for overseas Chinese.
+                                The purpose for us is to allow overseas Chinese to taste delicious Chinese food even when they leave their hometown and
+                                allowed non-Chinese to understand and taste eight cuisines of Chinese food at the same time.</Typography>
                         </Grid>
 
                     </Grid>
@@ -162,33 +205,34 @@ export default function Homepage() {
 
 
             {/* Starting the Grid Layout */}
-            {/* <div className={classG.root}>
-                <Grid container spacing={3}>
-                    <Grid item xs={12}>
-                        <Paper className={classG.paper}>xs=12</Paper>
+            <div className={classG.root}>
+                <Grid container>
+
+                    <Grid item xs={12} sm={6} md={6} className={classG.subsection}>
+                        <Typography className={classG.title} variant="h5">Become a Feeder</Typography>
+                        <Typography variant="body1" className={classG.body}>The overall average patient rating of Liem P Bui is Great.
+                            P Bui has been rated by 4 patients.From those 4 patients 0 of those left a comment along with
+                            their rating.The overall rating for Liem P Bui is 4.0 of 5.0 stars.</Typography>
                     </Grid>
-                    <Grid item xs={6}>
-                        <Paper className={classG.paper}>xs=6</Paper>
+                    <Grid item xs={12} sm={6} md={6} className={classG.subsection}>
+                        <img className={classG.paper} src={delivery_guy} height="430" width="600" alt="food"></img>
+
                     </Grid>
-                    <Grid item xs={6}>
-                        <Paper className={classG.paper}>xs=6</Paper>
+
+                    <Grid item xs={12} sm={6} md={6} className={classG.subsection}>
+                        <img className={classG.paper} src={partner} height="430" width="600" alt="food"></img>
                     </Grid>
-                    <Grid item xs={3}>
-                        <Paper className={classG.paper}>xs=3</Paper>
-                    </Grid>
-                    <Grid item xs={3}>
-                        <Paper className={classG.paper}>xs=3</Paper>
-                    </Grid>
-                    <Grid item xs={3}>
-                        <Paper className={classG.paper}>xs=3</Paper>
-                    </Grid>
-                    <Grid item xs={3}>
-                        <Paper className={classG.paper}>xs=3</Paper>
+                    <Grid item xs={12} sm={6} md={6} className={classG.subsection}>
+                        <Typography className={classG.title} variant="h5">Become a Partner</Typography>
+                        <Typography variant="body1" className={classG.body}>The overall average patient rating of Liem P Bui is Great.
+                            Liem P Bui has been rated by 4 patients.From those 4 patients 0 of those left a comment along with
+                            their rating.The overall rating for Liem P Bui is 4.0 of 5.0 stars.</Typography>
                     </Grid>
                 </Grid>
-            </div> */}
+            </div>
             {/* End of the Grid Layout */}
 
+            <Footer />
         </div >
     )
 }
