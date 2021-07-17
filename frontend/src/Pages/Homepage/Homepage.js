@@ -86,7 +86,8 @@ const desc = makeStyles((theme) => ({
     title: {
         textAlign: "center",
         fontFamily: "Inknut Antiqua",
-        color: "#ba68c8",
+        color: "#512da8",
+        paddingTop: "1em",
         fontSize: "120%",
     },
     paper: {
@@ -116,10 +117,10 @@ const gridSection = makeStyles((theme) => ({
     },
     title: {
         textAlign: "center",
-        color: "#7b1fa2",
+        color: "#000000",
         fontFamily: "Inknut Antiqua",
         fontSize: "185%",
-        lineHeight: "290px",
+        lineHeight: "250px",
         height: "200px",
 
     },
@@ -132,17 +133,17 @@ const gridSection = makeStyles((theme) => ({
         textAlign: "center",
         paddingLeft: "150px",
         paddingRight: "150px",
+        marginTop: "-2em",
         fontFamily: "Nunito",
     },
     join: {
-        backgroundColor: "#4a148c",
+        backgroundColor: "#673ab7",
         textTransform: 'capitalize',
         fontFamily: "Inknut Antiqua",
         color: "#ffffff",
         width: "200px",
         height: "40px",
         marginTop: "2em",
-
     }
 
 }));
@@ -176,8 +177,6 @@ export default function Homepage() {
             </div>
             {/* End of Background Image Section */}
 
-            {/* <img src={feeder} alt="food"></img> */}
-
             {/* Feedi Description */}
             <div className={classD.root}>
                 <CssBaseline />
@@ -191,7 +190,7 @@ export default function Homepage() {
                             <Typography className={classD.title}>Local Chinese Restaurant</Typography>
                             <Typography className={classD.description}><span className={classD.spanning}>Feedi</span> is targeting overseas Chinese and non-Chinese, we help you to discover all the possible local Chinese restaurants nearby, up to eight major cuisines.
                                 However, most Chinese people are unable to visit their local famous Chinese restaurant.
-                                Feedi offers food delivery service to help you enjoy Chinese food in your busy schedule.</Typography>
+                                <span className={classD.spanning}> Feedi</span> offers food delivery service to help you enjoy Chinese food in your busy schedule.</Typography>
                         </Grid>
                         <Grid item xs={12} sm={4}>
                             <img className={classD.paper} src={stomach} height="230" width="330" alt="food"></img>

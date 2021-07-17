@@ -18,8 +18,6 @@ function App() {
   return (
     <Router>
       <div>
-        {/* This is the starter point for Feedi. Everything will be show up in here. */}
-        {/* begin miguel part */}
         <Switch>
           <Route exact path='/' component={Homepage} />
           <Route path='/about' component={About} />
@@ -33,7 +31,6 @@ function App() {
           <Route path='/feeder' component={Feeder} />
           <Route path='/partner' component={Partner} />
         </Switch>
-
       </div>
     </Router>
   );

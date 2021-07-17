@@ -1,180 +1,188 @@
-@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Suez+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Suez+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Suez+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
 /* *{
     margin:0;
     padding:0;
     box-sizing: border-box;
 } */
-.body{
-    background: url("image/header_picture.jpg");
-    /* position: fixed; */
-    width: 100%;
-    height: 600px;
-    background-size: cover;
-    /* background-position: center; */
+.body {
+  background: url("image/header_picture.jpg");
+  /* position: fixed; */
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  /* background-position: center; */
 }
-.body .header h3{
-    /* position: fixed; */
-    text-align: center;
-    color:white;
-    text-shadow: 2px 2px 4px #000000;
-    font-family: 'Suez One', serif;
-    position: absolute;
-    font-weight: 500;
-    font-size: 40px;
-    top: 334px;
-    width: 100%;
+.body .header h3 {
+  /* position: fixed; */
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  /* font-family: "Suez One", serif; */
+  font-family: "Otomanopee One";
+  position: absolute;
+  font-weight: 500;
+  font-size: 40px;
+  top: 270px;
+  width: 100%;
 }
-.body .header .text{
-    /* position: fixed; */
-    color:white;
-    text-shadow: 2px 2px 4px #000000;
-    font-family: 'Dosis', sans-serif;
-    text-align: center;
-    font-weight: 600;
-    font-size:25px;
-    line-height: 28px;
-    position: relative;
-    top: 414px;    
+.body .header .text {
+  /* position: fixed; */
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font-family: "Otomanopee One";
+  text-align: center;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 28px;
+  position: relative;
+  top: 320px;
 }
-.body .content .first{
-    /* position: fixed; */
-    color:black;
-    margin-top: 650px;
-    float: left;
-    font-family: 'Inter', sans-serif;
-    font-weight: 800;
-    font-size: 20px;
-    margin-left: 25%;
-  
+.body .content .first {
+  /* position: fixed; */
+  color: black;
+  margin-top: 650px;
+  float: left;
+  /* font-family: 'Inter', sans-serif; */
+  font-family: Inknut Antiqua;
+  font-weight: 800;
+  font-size: 20px;
+  margin-left: 25%;
 }
-.body .content .goal p{
-    /* position: fixed; */
-    color: #3e3f4d;
-    margin-top: 10px;
-    float: left;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 15px;
-    margin-left: 15%;
-  
-}
-.body .content .second{
-    /* position: fixed; */
-    color: black;
-    float: right;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 50px;
-    margin-right: 25%;
-    margin-top: -140px;
-}
-.body .content .vision p{
-    /* position: fixed; */
-    color: #3e3f4d;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 15px;
-    margin-right: 15%;
-    margin-left: 55%;
-    margin-top: -90px;
+.body .content .goal p {
+  /* position: fixed; */
+  color: #3e3f4d;
+  margin-top: 10px;
+  float: left;
 
+  font-family: "Nuito";
+  font-weight: 500;
+  font-size: 17px;
+  margin-left: 15%;
 }
-.body .content .goal_photo{
-    /* position: fixed; */
-    background: url("image/goal.jpg");
-    width: 600px;
-    height: 400px;
-    background-size: cover;
-    margin-top: 100px;
-    margin-left:180px;
-    float:left;
-} 
-.body .content .vision_photo{
-    /* position: fixed; */
-    background: url("image/vision.jpg");
-    width: 600px;
-    height: 400px;
-    background-size: cover;
-    margin-top: 100px;
-    margin-right:160px;
-    float:right;
-} 
-.body .content .our_company h3{
-    /* position: fixed; */
-    text-align: center;
-    margin-top: 100px;
-    font-weight: 700;
+.body .content .second {
+  /* position: fixed; */
+  color: black;
+  float: right;
+  font-family: Inknut Antiqua;
+  font-weight: 500;
+  font-size: 50px;
+  margin-right: 25%;
+  margin-top: -140px;
+}
+.body .content .vision p {
+  /* position: fixed; */
+  color: #3e3f4d;
+  font-family: "Nuito";
+  font-weight: 500;
+  font-size: 17px;
+  margin-right: 15%;
+  margin-left: 55%;
+  margin-top: -90px;
+}
+.body .content .goal_photo {
+  /* position: fixed; */
+  background: url("image/goal.jpg");
+  width: 600px;
+  height: 400px;
+  background-size: cover;
+  margin-top: 100px;
+  margin-left: 180px;
+  float: left;
+}
+.body .content .vision_photo {
+  /* position: fixed; */
+  background: url("image/vision.jpg");
+  width: 600px;
+  height: 400px;
+  background-size: cover;
+  margin-top: 100px;
+  margin-right: 160px;
+  float: right;
+}
+.body .content .our_company h3 {
+  /* position: fixed; */
+  text-align: center;
+  margin-top: 100px;
+  font-weight: 700;
+  font-family: Inknut Antiqua;
 }
 .body .content .our_company_p {
-    /* position: fixed; */
-    color:#737587;
-    float:left;
-    float:right;
-    margin-left: 250px;
-    margin-right: 250px;
-    word-wrap: break-word;
-    font-weight: 500;
-    margin-top:20px;
+  /* position: fixed; */
+  color: #737587;
+  float: left;
+  float: right;
+  margin-left: 250px;
+  margin-right: 250px;
+  word-wrap: break-word;
+  font-weight: 500;
+  margin-top: 20px;
 }
-.body .content .company_first{
-    /* position: fixed; */
-    background: url("image/company_first.jpg");
-    width: 25%;
-    height: 400px;
-    background-size: cover;
-    margin-top: 100px;
-    margin-left:140px;
-    float:left;
-} 
-.body .content .company_second{
-    /* position: fixed; */
-    background: url("image/company_second.jpg");
-    width: 25%;
-    height: 400px;
-    background-size: cover;
-    margin-top: 100px;
-    margin-left:140px;
-    float:left;
-} 
-.body .content .company_third{
-    /* position: fixed; */
-    background: url("image/company_third.jpg");
-    width: 25%;
-    height: 400px;
-    background-size: cover;
-    margin-top: 100px;
-    margin-left:140px;
-    float:left;
-} 
-.body .content .contact{
-    /* position: fixed; */
-    margin-top:50px;
-    margin-left: 120px;
-    font-weight: 1000;
-    font-family: 'Inter', sans-serif;
-    color:black; 
+.body .content .company_first {
+  /* position: fixed; */
+  background: url("image/company_first.jpg");
+  width: 25%;
+  height: 400px;
+  background-size: cover;
+  margin-top: 100px;
+  margin-left: 140px;
+  float: left;
 }
-.body .content .customer_service{
-    /* position: fixed; */
-    float: left;
-    margin-left: 250px;
-    margin-top:40px;
+.body .content .company_second {
+  /* position: fixed; */
+  background: url("image/company_second.jpg");
+  width: 25%;
+  height: 400px;
+  background-size: cover;
+  margin-top: 100px;
+  margin-left: 140px;
+  float: left;
 }
-.body .content .it_support{
-    /* position: fixed; */
-    float: left;
-    margin-left: 370px;
-    margin-top:40px;
+.body .content .company_third {
+  /* position: fixed; */
+  background: url("image/company_third.jpg");
+  width: 25%;
+  height: 400px;
+  background-size: cover;
+  margin-top: 100px;
+  margin-left: 140px;
+  float: left;
 }
-.body .content .partner{
-    /* position: fixed; */
-    float: left;
-    margin-left: 380px;
-    margin-top:40px;
+.body .content .contact {
+  /* position: fixed; */
+  margin-top: 50px;
+  margin-left: 120px;
+  font-weight: 1000;
+  font-family: Inknut Antiqua;
+  color: black;
 }
-.clear{
-    clear: both;
-    
+.body .content .customer_service {
+  /* position: fixed; */
+  float: left;
+  margin-left: 250px;
+  margin-top: 40px;
+  font-family: "Nuito";
+}
+.body .content .it_support {
+  /* position: fixed; */
+  float: left;
+  margin-left: 370px;
+  margin-top: 40px;
+  font-family: "Nuito";
+}
+.body .content .partner {
+  /* position: fixed; */
+  float: left;
+  margin-left: 380px;
+  margin-top: 40px;
+  font-family: "Nuito";
+}
+.it_support h3,
+.customer_service h3,
+.partner h3 {
+  font-family: Inknut Antiqua;
+}
+.clear {
+  clear: both;
 }

@@ -23,6 +23,7 @@ const useStyles = makeStyles((theme) => ({
         marginRight: theme.spacing(2),
         "&:hover": {
             color: "white",
+            backgroundColor: "#5e35b1",
             textDecoration: "none"
 
         }
@@ -33,6 +34,7 @@ const useStyles = makeStyles((theme) => ({
         color: "#ffffff",
         "&:hover": {
             color: "white",
+            backgroundColor: "#5e35b1",
             textDecoration: "none"
 
         }
@@ -48,7 +50,7 @@ export default function Header() {
 
     return (
         <div className={classes.root} >
-            <AppBar position="fixed" className={classes.header}>
+            <AppBar position="static" className={classes.header}>
 
                 <Toolbar>
                     <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" href="/">
@@ -60,14 +62,8 @@ export default function Header() {
                     </Typography>
 
                     <div>
-
-                        {/* <a className={"ButtonChange"} href="/about">About Us</a> */}
-                        {/* <Button size="small" className="home" variant="contained">Home</Button> */}
-                        {/* About us should be in the footer section */}
-                        {/* <Button className={classes.submenu} size="medium" href="/about" style={{ textTransform: 'capitalize' }}>About Us</Button> */}
                         <Button className={classes.submenu} href="/browse" size="medium" startIcon={<RestaurantMenuIcon />}>Restaurant NearBy</Button>
                         <Button className={classes.submenu} href="/login" size="medium" startIcon={<PersonIcon />}>Login / Sign Up</Button>
-
                     </div>
 
                 </Toolbar>
