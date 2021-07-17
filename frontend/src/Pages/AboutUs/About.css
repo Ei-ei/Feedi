@@ -16,6 +16,7 @@
 }
 .body .header h3{
     /* position: fixed; */
+    text-align: center;
     color:white;
     text-shadow: 2px 2px 4px #000000;
     font-family: 'Suez One', serif;
@@ -102,6 +103,7 @@
 } 
 .body .content .our_company h3{
     /* position: fixed; */
+    text-align: center;
     margin-top: 100px;
     font-weight: 700;
 }

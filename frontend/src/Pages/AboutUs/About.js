@@ -1,11 +1,14 @@
 import React from 'react';
 import './About.css';
-
+import Header from "../../Components/Header/Header";
+import Footer from "../../Components/Footer/Footer";
 
 export default class About extends React.Component {
     render() {
         return (
+            
             <div className = 'body'>
+                <Header/>
                 <div className = 'header'>
                     <h3>Test Express</h3>
                     <div class = "text">          
@@ -104,6 +107,7 @@ export default class About extends React.Component {
                     
 
                 </div>
+                <Footer/>
             </div>
            
         )

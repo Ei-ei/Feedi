@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
     },
     header: {
-        backgroundColor: "#ba68c8",
+        backgroundColor: "#512da8",
         color: "white",
     },
     menuButton: {
@@ -48,7 +48,7 @@ export default function Header() {
 
     return (
         <div className={classes.root} >
-            <AppBar position="static" className={classes.header}>
+            <AppBar position="fixed" className={classes.header}>
 
                 <Toolbar>
                     <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" href="/">
