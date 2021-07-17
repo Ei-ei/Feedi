@@ -219,7 +219,6 @@ export default function Homepage() {
             {/* Starting the Grid Layout */}
             <div className={classG.root}>
                 <Grid container>
-
                     <Grid item xs={12} sm={6} md={6} className={classG.subsection}>
                         <Typography className={classG.title} variant="h5">Become a Feeder</Typography>
                         <Typography variant="body1" className={classG.body}>The overall average patient rating of Liem P Bui is Great.
